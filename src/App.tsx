@@ -7,6 +7,7 @@ import ProjectsSection from './components/ProjectsSection';
 import EducationSection from './components/EducationSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
+import RevealOnScroll from './components/RevealOnScroll';
 
 function App() {
   return (
@@ -17,12 +18,31 @@ function App() {
       {/* Main Content */}
       <Navbar />
       <HeroSection />
-      <StatsBar />
-      <AboutSection />
-      <SkillsSection />
-      <ProjectsSection />
-      <EducationSection />
-      <ContactSection />
+
+      <RevealOnScroll>
+        <StatsBar />
+      </RevealOnScroll>
+
+      <RevealOnScroll>
+        <AboutSection />
+      </RevealOnScroll>
+
+      <RevealOnScroll>
+        <SkillsSection />
+      </RevealOnScroll>
+
+      <RevealOnScroll>
+        <ProjectsSection />
+      </RevealOnScroll>
+
+      <RevealOnScroll>
+        <EducationSection />
+      </RevealOnScroll>
+
+      <RevealOnScroll>
+        <ContactSection />
+      </RevealOnScroll>
+
       <Footer />
     </div>
   );

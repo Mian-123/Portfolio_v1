@@ -1,4 +1,5 @@
 import { projects } from '../data/portfolioData';
+import TechTag from './TechTag';
 
 const ProjectsSection = () => {
   return (
@@ -64,12 +65,7 @@ const ProjectsSection = () => {
                 {/* Tech Tags */}
                 <div className="flex flex-wrap gap-[0.4rem]">
                   {project.tags.map((tag, i) => (
-                    <span
-                      key={i}
-                      className="px-[0.6rem] py-[0.2rem] rounded text-[0.67rem] font-mono bg-[rgba(167,139,250,0.07)] border border-[rgba(167,139,250,0.15)] text-[#a78bfa]"
-                    >
-                      {tag}
-                    </span>
+                    <TechTag key={i} name={tag} variant="project" />
                   ))}
                 </div>
               </div>

@@ -1,4 +1,5 @@
 import { skillCategories } from '../data/portfolioData';
+import TechTag from './TechTag';
 
 const SkillsSection = () => {
   return (
@@ -29,12 +30,7 @@ const SkillsSection = () => {
               </div>
               <div className="flex flex-wrap gap-[0.45rem]">
                 {category.skills.map((skill, skillIndex) => (
-                  <span
-                    key={skillIndex}
-                    className="px-3 py-[0.28rem] rounded-full bg-[rgba(79,172,254,0.06)] border border-[rgba(79,172,254,0.13)] text-[0.78rem] text-[#94a3b8] transition-all duration-[180ms] hover:bg-[rgba(79,172,254,0.14)] hover:border-[#4facfe] hover:text-[#4facfe]"
-                  >
-                    {skill}
-                  </span>
+                  <TechTag key={skillIndex} name={skill} variant="skill" />
                 ))}
               </div>
             </div>

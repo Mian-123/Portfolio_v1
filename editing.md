@@ -753,3 +753,23 @@ Change `72px` to adjust grid density. Change the `0.03` opacity to make lines mo
 3. **TypeScript** is used throughout. If you add new data structures, define interfaces in `portfolioData.ts`.
 4. **Responsive breakpoints:** Mobile < 768px (md), Tablet 768-1024px (lg), Desktop > 1024px.
 5. **All smooth scrolling** uses `element.scrollIntoView({ behavior: 'smooth' })` — no external libraries.
+
+Simple — just replace the PDF file and push:
+
+Replace the file at 
+M_Waleed_CV.pdf
+ with your updated CV (keep the same filename)
+Commit and push:
+git add .
+git commit -m "update cv"
+git push
+Vercel auto-deploys — it detects the push and rebuilds automatically. Your live site will have the new CV within ~30 seconds.
+If you want to use a different filename (e.g., Waleed_Resume_2026.pdf):
+
+Place the new file in public/assets/
+Update the href in 
+Navbar.tsx
+ (two places — desktop and mobile menu):
+href="/assets/Waleed_Resume_2026.pdf"
+Commit and push.
+That's it. The editing.md file in your repo has all this documented too under Section 5.
