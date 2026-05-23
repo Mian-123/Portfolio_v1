@@ -28,6 +28,17 @@ const ProjectsSection = () => {
               {/* Top gradient line */}
               <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-[#4facfe] to-[#a78bfa] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
+              {/* Project Image */}
+              {project.image && (
+                <div className="overflow-hidden rounded-t-xl -mx-[1px] -mt-[1px] mb-0">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-48 object-cover object-top border-b border-[rgba(255,255,255,0.06)]"
+                  />
+                </div>
+              )}
+
               <div className="p-7">
                 {/* Meta */}
                 <div className="flex items-center gap-2 font-mono text-[0.7rem] text-[#4facfe] mb-4 tracking-[0.06em]">

@@ -23,6 +23,7 @@ export interface Project {
   description: string;
   highlight: string;
   tags: string[];
+  image?: string;
 }
 
 export interface Education {
@@ -140,6 +141,7 @@ export const projects: Project[] = [
     title: "SchoolWise Manager",
     year: "2026",
     badges: ["DEPLOYED", "LIVE"],
+    image: "/assets/schoolwise.png",
     description:
       "Cloud based school administration platform deployed at The Punjab Lyceum School, managing records for students. Automates fee voucher generation, academic reports, and dues tracking reducing manual workload by over 70%.",
     highlight:
@@ -150,6 +152,7 @@ export const projects: Project[] = [
     title: "Skill Map AI",
     year: "2026",
     badges: ["AI", "HACKATHON"],
+    image: "/assets/skillmap.png",
     description:
       "AI-powered career intelligence platform bridging the gap between a candidate's current skills and target roles. Features resume analysis, skill gap detection, ATS optimization, learning roadmaps, and an AI career chat assistant.",
     highlight:
