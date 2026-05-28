@@ -46,17 +46,18 @@ const HeroSection = () => {
 
             {/* CTA Buttons */}
             <div className="flex gap-[0.875rem] flex-wrap">
+              <a
+                href="/assets/M_Waleed_CV.pdf"
+                download="Muhammad_Waleed_CV.pdf"
+                className="px-5 py-2 rounded-lg text-[0.85rem] font-semibold bg-gradient-to-br from-[#4facfe] to-[#00f2fe] border border-transparent text-[#0a0f1e] hover:shadow-[0_0_28px_rgba(79,172,254,0.45)] hover:brightness-110 transition-all duration-200 inline-flex items-center gap-1 no-underline"
+              >
+                Resume
+              </a>
               <button
                 onClick={() => scrollToSection('projects')}
-                className="px-5 py-2 rounded-lg text-[0.85rem] font-semibold bg-gradient-to-br from-[#4facfe] to-[#00f2fe] border border-transparent text-[#0a0f1e] hover:shadow-[0_0_28px_rgba(79,172,254,0.45)] hover:brightness-110 transition-all duration-200 inline-flex items-center gap-1"
-              >
-                View Projects
-              </button>
-              <button
-                onClick={() => scrollToSection('contact')}
                 className="px-5 py-2 rounded-lg text-[0.85rem] font-semibold bg-transparent border border-[rgba(79,172,254,0.35)] text-[#e2e8f0] hover:bg-[rgba(79,172,254,0.06)] hover:border-[#4facfe] transition-all duration-200"
               >
-                Get In Touch
+                View Projects
               </button>
             </div>
           </div>
