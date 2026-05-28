@@ -70,7 +70,7 @@ export const roles: string[] = [
 
 export const stats: Stat[] = [
   { value: "3+", label: "Projects Shipped" },
-  { value: "6+", label: "Certifications" },
+  { value: "7+", label: "Certifications" },
   { value: "20+", label: "Technologies" },
 ];
 
@@ -171,6 +171,7 @@ export const education: Education = {
 export const certifications: Certification[] = [
   { name: "Javascript MEAN/MERN Stack", issuer: "KICS, UET Lahore" },
   { name: "Level 1 Agentic AI Developer", issuer: "PIAIC, Lahore" },
+  { name: "AWS AI Practitioner Challenge", issuer: "Udacity · Part of Accenture" },
   { name: "Generative AI Bootcamp", issuer: "Outskills · 2 Days Intensive" },
   { name: "ChatGPT Prompt Engineering for Developers", issuer: "DeepLearning.AI · Andrew Ng" },
   { name: "Graphic Designing", issuer: "Primal Science Academy" },

@@ -82,7 +82,7 @@ function Navbar() {
 
       {/* Mobile Menu Dropdown */}
       {isMenuOpen && (
-        <div className="absolute top-[68px] left-0 right-0 md:hidden border-t border-[rgba(255,255,255,0.06)] bg-[rgba(10,15,30,0.95)] backdrop-blur-[24px]">
+        <div className="fixed top-[68px] left-0 right-0 md:hidden border-t border-[rgba(255,255,255,0.06)] bg-[rgba(10,15,30,0.98)] backdrop-blur-[24px] z-[999] max-h-[calc(100vh-68px)] overflow-y-auto">
           <div className="px-[5%] py-4 space-y-3">
             {navLinks.map((link) => (
               <a
@@ -98,13 +98,13 @@ function Navbar() {
               <a
                 href="/assets/M_Waleed_CV.pdf"
                 download="Muhammad_Waleed_CV.pdf"
-                className="px-5 py-2 rounded-lg text-[0.85rem] font-semibold bg-transparent border border-[rgba(79,172,254,0.35)] text-[#e2e8f0] text-center no-underline"
+                className="px-5 py-3 rounded-lg text-[0.85rem] font-semibold bg-transparent border border-[rgba(79,172,254,0.35)] text-[#e2e8f0] text-center no-underline"
               >
                 Resume
               </a>
               <button
                 onClick={handleConnectClick}
-                className="px-5 py-2 rounded-lg text-[0.85rem] font-semibold bg-gradient-to-br from-[#4facfe] to-[#00f2fe] border border-transparent text-[#0a0f1e]"
+                className="px-5 py-3 rounded-lg text-[0.85rem] font-semibold bg-gradient-to-br from-[#4facfe] to-[#00f2fe] border border-transparent text-[#0a0f1e]"
               >
                 Connect
               </button>
